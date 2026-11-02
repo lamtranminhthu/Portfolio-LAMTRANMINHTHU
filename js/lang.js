@@ -17,8 +17,8 @@ const translations = {
   "stat.projects": "Projects", "stat.gpa": "GPA (out of 4.0)", "stat.langs": "Programming languages", "stat.years": "Years studying IT",
   "about.intro": "I'm Minh Thu, a third-year Information Technology student at the University of Transport Ho Chi Minh City with a solid foundation in programming and website development. I can think logically, research and teach myself new technologies, and I'm responsible, proactive and a good team player. I want to learn, gain experience and develop my professional skills in a business environment.",
   "goal.title": "Career goals",
-  "goal.short": "<strong>Short-term Goal:</strong> Seeking an internship opportunity as a Software Developer in 2027 to apply academic knowledge in a practical working environment, while improving programming skills, teamwork abilities, and gaining professional experience.",
-  "goal.long": "<strong>Long-term Goal:</strong> Aiming to become a skilled Software Developer with a strong technical foundation, capable of designing and developing software that is reliable, maintainable, user-friendly, and meets real-world needs.",
+  "goal.short": "<strong>Short-term:</strong> Seeking an internship opportunity as a Software Developer in 2027 to apply academic knowledge in a practical working environment, while improving programming skills, teamwork abilities, and gaining professional experience.",
+  "goal.long": "<strong>Long-term:</strong> Aiming to become a skilled Software Developer with a strong technical foundation, capable of designing and developing software that is reliable, maintainable, user-friendly, and meets real-world needs.",
 
   "skills.title": "Skills",
   "soft.team": "Teamwork and collaboration", "soft.time": "Time management", "soft.self": "Self-learning, proactively exploring new technologies", "soft.present": "Presenting and communicating ideas",
