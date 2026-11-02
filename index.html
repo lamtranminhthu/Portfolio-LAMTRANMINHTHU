@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e11d74">
+  <title>Lâm Trần Minh Thư | Portfolio</title>
+  <meta name="description" content="Portfolio của Lâm Trần Minh Thư - sinh viên CNTT, định hướng Software Developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Bricolage+Grotesque:wght@600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <!-- ========== HEADER / NAVBAR ========== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Menu chính">
+      <a href="#home" class="logo">ltmt2011<span>.dev</span></a>
+      <ul class="nav__list" id="navList">
+        <li><a href="#home" class="nav__link" data-i18n="nav.home">Trang chủ</a></li>
+        <li><a href="#about" class="nav__link" data-i18n="nav.about">Giới thiệu</a></li>
+        <li><a href="#skills" class="nav__link" data-i18n="nav.skills">Kỹ năng</a></li>
+        <li><a href="#experience" class="nav__link" data-i18n="nav.edu">Học vấn</a></li>
+        <li><a href="#projects" class="nav__link" data-i18n="nav.projects">Dự án</a></li>
+        <li><a href="#extras" class="nav__link" data-i18n="nav.extras">Thành tích</a></li>
+        <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Liên hệ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="icon-btn lang-btn" id="langBtn" aria-label="Switch to English">EN</button>
+        <button class="icon-btn nav__toggle" id="menuBtn" aria-label="Mở menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== BANNER ========== -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__hello" data-i18n="hero.hello">Xin chào, mình là</p>
+          <h1>Lâm Trần Minh&nbsp;Thư</h1>
+          <p class="hero__role"><span data-i18n="hero.role">Mình đang học để trở thành</span> <span id="typing" class="typing"></span></p>
+          <p class="hero__desc" data-i18n="hero.desc">Đam mê lập trình, yêu thích xây dựng những sản phẩm công nghệ từ ý tưởng đến thực tế, hướng đến sự đơn giản, hiệu quả và trải nghiệm người dùng.</p>
+          <div class="hero__btns">
+            <a href="#projects" class="btn btn--primary" data-i18n="hero.btn1">Dự án</a>
+            <a href="#contact" class="btn btn--ghost" data-i18n="hero.btn2">Liên hệ</a>
+            <a href="cvltmt.pdf" class="btn btn--ghost" download data-i18n="hero.cv">Tải CV</a>
+          </div>
+        </div>
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal__bar"><i></i><i></i><i></i><span>about-me.js</span></div>
+<pre><code><b>const</b> <em>thu</em> = {
+  school: <u>"ĐH GTVT TP.HCM"</u>,
+  major:  <u>"Công nghệ thông tin"</u>,
+  focus:  [<u>"HTML"</u>, <u>"CSS"</u>, <u>"JavaScript"</u>],
+  coffee: <u>true</u>,
+  openToWork: <u>"thực tập 2027"</u>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GIỚI THIỆU + MỤC TIÊU ========== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <figure class="about__photo">
+          <img src="images/avatar.jpg" alt="Ảnh đại diện" width="400" height="400">
+        </figure>
+        <div>
+          <h2 data-i18n="about.title">Giới thiệu bản thân</h2>
+          <dl class="info">
+            <div><dt data-i18n="about.name">Họ tên</dt><dd>Lâm Trần Minh Thư</dd></div>
+            <div><dt data-i18n="about.gender">Giới tính</dt><dd data-i18n="about.female">Nữ</dd></div>
+            <div><dt data-i18n="about.dob">Ngày sinh</dt><dd>20/11/2006</dd></div>
+            <div><dt data-i18n="about.pob">Nơi sinh</dt><dd data-i18n="about.hcm">TP. Hồ Chí Minh</dd></div>
+            <div><dt data-i18n="about.major">Ngành học</dt><dd data-i18n="about.majorVal">Công nghệ thông tin</dd></div>
+            <div><dt data-i18n="about.path">Định hướng</dt><dd>Software Developer</dd></div>
+          </dl>
+          <p data-i18n="about.intro">Mình là Minh Thư, sinh viên năm 3 ngành Công nghệ thông tin tại Trường Đại học Giao thông Vận tải TP. Hồ Chí Minh, có kiến thức nền tảng về lập trình và phát triển website. Mình có khả năng tư duy logic, nghiên cứu và tự học công nghệ mới; có tinh thần trách nhiệm, chủ động và làm việc nhóm tốt. Mình mong muốn được học hỏi, tích lũy kinh nghiệm và phát triển kỹ năng chuyên môn trong môi trường doanh nghiệp.</p>
+          <article class="goal">
+            <h3 data-i18n="goal.title">Mục tiêu nghề nghiệp</h3>
+            <p data-i18n-html="goal.short"><strong>Ngắn hạn:</strong> Mong muốn tìm kiếm cơ hội thực tập ở vị trí Software Developer vào năm 2027, để vận dụng kiến thức chuyên môn đã học vào thực tế, đồng thời trau dồi kỹ năng lập trình, làm việc nhóm và tích lũy kinh nghiệm trong môi trường doanh nghiệp.</p>
+            <p data-i18n-html="goal.long"><strong>Dài hạn:</strong> Định hướng trở thành Software Developer có nền tảng chuyên môn vững chắc, có khả năng xây dựng và phát triển các phần mềm hoạt động ổn định, dễ bảo trì, thân thiện với người dùng và đáp ứng tốt nhu cầu thực tế.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SỐ LIỆU (COUNTER) ========== -->
+    <section class="section stats" aria-label="Số liệu nổi bật">
+      <div class="container stats__grid">
+        <div class="stat"><strong class="stat__num" data-count="3">0</strong><span data-i18n="stat.projects">Dự án</span></div>
+        <div class="stat"><strong class="stat__num" data-count="3.1" data-decimals="1">0</strong><span data-i18n="stat.gpa">GPA (thang 4.0)</span></div>
+        <div class="stat"><strong class="stat__num" data-count="3">0</strong><span data-i18n="stat.langs">Ngôn ngữ lập trình</span></div>
+        <div class="stat"><strong class="stat__num" data-count="2">0</strong><span data-i18n="stat.years">Năm học CNTT</span></div>
+      </div>
+    </section>
+
+    <!-- ========== KỸ NĂNG ========== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 data-i18n="skills.title">Kỹ năng</h2>
+        <div class="skills">
+          <div class="skill" data-level="65"><div class="skill__top"><span>HTML5</span><span>65%</span></div><div class="skill__bar"><span></span></div></div>
+          <div class="skill" data-level="60"><div class="skill__top"><span>CSS3 / Flexbox / Grid</span><span>60%</span></div><div class="skill__bar"><span></span></div></div>
+          <div class="skill" data-level="55"><div class="skill__top"><span>JavaScript</span><span>55%</span></div><div class="skill__bar"><span></span></div></div>
+          <div class="skill" data-level="55"><div class="skill__top"><span>Python</span><span>55%</span></div><div class="skill__bar"><span></span></div></div>
+          <div class="skill" data-level="55"><div class="skill__top"><span>Java</span><span>55%</span></div><div class="skill__bar"><span></span></div></div>
+          <div class="skill" data-level="60"><div class="skill__top"><span>Git / GitHub</span><span>60%</span></div><div class="skill__bar"><span></span></div></div>
+        </div>
+        <ul class="chips" aria-label="Kỹ năng mềm">
+          <li data-i18n="soft.team">Làm việc nhóm và phối hợp</li><li data-i18n="soft.time">Quản lý thời gian</li><li data-i18n="soft.self">Tự học, chủ động tìm hiểu công nghệ mới</li><li data-i18n="soft.present">Thuyết trình và trình bày vấn đề</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== HỌC VẤN / KINH NGHIỆM / HOẠT ĐỘNG ========== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 data-i18n="edu.title">Học vấn &amp; Kinh nghiệm</h2>
+        <ol class="timeline">
+          <li><time>2021 – 2024</time><h3 data-i18n="edu.school2">Trường THPT Giồng Ông Tố</h3><p data-i18n="edu.desc3">Tốt nghiệp THPT năm 2024</p></li>
+          <li><time data-i18n="edu.time1">2024 – nay</time><h3 data-i18n="edu.school">Đại học Giao thông Vận tải TP.HCM</h3><p data-i18n="edu.desc1">Sinh viên năm 3 | Ngành và chuyên ngành: Công nghệ thông tin | GPA 3.1/4.0</p></li>
+          <li><time data-i18n="edu.time2">Hiện tại</time><h3 data-i18n="edu.act">Hoạt động &amp; thành tích</h3><p data-i18n="edu.desc2">Chưa có. Mình đang tích lũy kinh nghiệm qua các dự án bên dưới.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== DỰ ÁN ========== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2 data-i18n="proj.title">Dự án</h2>
+        <div class="filters" role="group" aria-label="Lọc dự án">
+          <button class="filter is-active" data-filter="all" data-i18n="proj.all">Tất cả</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="python">Python</button>
+        </div>
+
+        <div class="projects">
+          <article class="card" data-category="python">
+            <button class="card__img" type="button" data-title-key="p1" data-images="images/DFD.jpg,images/UCD.jpg,images/CD.jpg" aria-label="Xem ảnh dự án">
+              <img src="images/DFD.jpg" alt="Ảnh minh họa Hệ thống quản lý sinh viên" loading="lazy">
+              <span class="card__zoom">🔍</span>
+            </button>
+            <div class="card__body">
+              <h3 data-i18n="p1.title">Hệ thống quản lý sinh viên</h3>
+              <p class="card__meta" data-i18n="p1.meta">Nhóm 5 thành viên · Đã hoàn thành</p>
+              <p data-i18n="p1.desc">Hệ thống hỗ trợ quản lý hồ sơ sinh viên, đăng ký học phần, quản lý điểm và tra cứu thời khóa biểu.</p>
+              <ul class="tags"><li>Python</li><li>SQLite</li></ul>
+              <div class="card__links">
+                <button class="link-btn" data-modal="p1" data-i18n="proj.details">Chi tiết</button>
+                <a href="https://github.com/tienhxit-jpg/StudentManagementSystem" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="web">
+            <button class="card__img" type="button" data-title-key="p2" data-images="images/cv1.jpg,images/cv2.jpg,images/cv3.jpg" aria-label="Xem ảnh dự án">
+              <img src="images/cv1.jpg" alt="Ảnh minh họa Website Portfolio cá nhân" loading="lazy">
+              <span class="card__zoom">🔍</span>
+            </button>
+            <div class="card__body">
+              <h3 data-i18n="p2.title">Website Portfolio cá nhân</h3>
+              <p class="card__meta" data-i18n="p2.meta">Cá nhân · Đã hoàn thành</p>
+              <p data-i18n="p2.desc">Website Portfolio cá nhân với giao diện responsive, tương thích trên máy tính và thiết bị di động.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="card__links">
+                <button class="link-btn" data-modal="p2" data-i18n="proj.details">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="web">
+            <button class="card__img" type="button" data-title-key="p3" data-images="images/trangchu.png,images/vieclam.png,images/cty.png" aria-label="Xem ảnh dự án">
+              <img src="images/trangchu.png" alt="Ảnh minh họa Website Cổng thông tin việc làm" loading="lazy">
+              <span class="card__zoom">🔍</span>
+            </button>
+            <div class="card__body">
+              <h3 data-i18n="p3.title">Website Cổng thông tin việc làm</h3>
+              <p class="card__meta" data-i18n="p3.meta">Nhóm 6 thành viên · Đang phát triển</p>
+              <p data-i18n="p3.desc">Website kết nối người tìm việc với nhà tuyển dụng: tìm kiếm việc làm, đăng tin tuyển dụng, xem thông tin công ty và quản lý người dùng.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="card__links">
+                <button class="link-btn" data-modal="p3" data-i18n="proj.details">Chi tiết</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CHỨNG CHỈ / GIẢI THƯỞNG / SỞ THÍCH ========== -->
+    <section class="section" id="extras">
+      <div class="container extras">
+        <div>
+          <h2 data-i18n="cert.title">Chứng chỉ</h2>
+          <ul class="list">
+            <li data-i18n="none">Chưa có</li>
+          </ul>
+        </div>
+        <div>
+          <h2 data-i18n="award.title">Giải thưởng</h2>
+          <ul class="list">
+            <li data-i18n="none">Chưa có</li>
+          </ul>
+        </div>
+        <div>
+          <h2 data-i18n="hobby.title">Sở thích</h2>
+          <ul class="list">
+            <li data-i18n="hobby.read">Đọc sách</li>
+            <li data-i18n="hobby.music">Nghe nhạc</li>
+            <li data-i18n="hobby.photo">Chụp ảnh</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LIÊN HỆ ========== -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div>
+          <h2 data-i18n="contact.title">Liên hệ</h2>
+          <p data-i18n="contact.intro">Bạn có cơ hội thực tập, dự án nhỏ hoặc chỉ muốn trò chuyện về code? Hãy nhắn cho mình.</p>
+          <ul class="contact__list">
+            <li>✉️ <a href="mailto:thultm1931@ut.edu.vn">thultm1931@ut.edu.vn</a> <button type="button" class="copy-btn" id="copyEmail" data-i18n="contact.copy">Sao chép</button></li>
+            <li>📞 <a href="tel:0778990397">0778990397</a></li>
+            <li>🐙 <a href="https://github.com/lamtranminhthu" target="_blank" rel="noopener">github.com/lamtranminhthu</a></li>
+            <li>📍 <span data-i18n="contact.loc">TP. Thủ Đức, TP. Hồ Chí Minh</span></li>
+          </ul>
+        </div>
+        <form id="contactForm" class="form" novalidate>
+          <div class="field">
+            <label for="name" data-i18n="form.name">Họ và tên</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+            <small class="error" id="nameErr"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <small class="error" id="emailErr"></small>
+          </div>
+          <div class="field">
+            <label for="message"><span data-i18n="form.message">Lời nhắn</span> <span class="count" id="count">0/300</span></label>
+            <textarea id="message" name="message" rows="5" maxlength="300"></textarea>
+            <small class="error" id="messageErr"></small>
+          </div>
+          <button type="submit" class="btn btn--primary" data-i18n="form.send">Gửi</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer.text">© 2026 Lâm Trần Minh Thư. Sinh viên ngành Công nghệ thông tin.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Lên đầu trang">↑</button>
+
+  <!-- ========== MODAL CHI TIẾT DỰ ÁN ========== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Đóng">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Ảnh trước">‹</button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Ảnh sau">›</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="modalClose" aria-label="Đóng">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p class="modal__meta" id="modalMeta"></p>
+      <p id="modalDesc"></p>
+      <h4 id="modalRoleTitle"></h4>
+      <ul class="list" id="modalList"></ul>
+    </div>
+  </div>
+
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
